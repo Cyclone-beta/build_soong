@@ -88,6 +88,15 @@ type variableProperties struct {
 			Header_libs         []string `android:"arch_variant"`
 		} `android:"arch_variant"`
 
+		Malloc_not_svelte struct {
+			Cflags              []string `android:"arch_variant"`
+			Shared_libs         []string `android:"arch_variant"`
+			Whole_static_libs   []string `android:"arch_variant"`
+			Exclude_static_libs []string `android:"arch_variant"`
+			Srcs                []string `android:"arch_variant"`
+			Header_libs         []string `android:"arch_variant"`
+		} `android:"arch_variant"`
+
 		Malloc_zero_contents struct {
 			Cflags []string `android:"arch_variant"`
 		} `android:"arch_variant"`
